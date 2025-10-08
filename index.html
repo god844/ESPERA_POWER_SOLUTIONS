@@ -392,6 +392,37 @@
             opacity: 0.9;
         }
 
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+        }
+
         .contact-button {
             display: inline-block;
             padding: 1rem 2.5rem;
@@ -535,6 +566,15 @@
             }
 
             .contact p {
+                font-size: 1rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .contact-item {
                 font-size: 1rem;
             }
 
@@ -698,7 +738,17 @@
     <section class="contact" id="contact">
         <h2>Ready to Start Your Project?</h2>
         <p>Get in touch with us today for a free consultation and quote</p>
-        <a href="deepakjoy77@gmail.com" class="contact-button">Contact Us</a>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <a href="mailto:deepakjoy77@gmail.com">deepakjoy77@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <a href="tel:+919745349482">+91 97453 49482</a>
+            </div>
+        </div>
+        <a href="mailto:deepakjoy77@gmail.com" class="contact-button">Email Us Now</a>
     </section>
 
     <footer>
